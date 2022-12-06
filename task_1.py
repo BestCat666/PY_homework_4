@@ -5,17 +5,19 @@
 import math
 
 d = float(input('введите d: '))
-n = 3
+n = 1
+a = 4
+b = 1
 s = math.pi
-k = (1 - 1/n + 1/(n + 2))
-pi2 = 4 * k
-while pi2 - s  > d:
-    pi2 = pi2 - 1/n + 1/(n + 2)
-    n = n + 2 
-    print(pi2)
+pi = a  * (b - (1/(2 * n + 1)) * ((-1)**n))
+while (pi - s)  > d:
+    k = b - (1/(2 * n + 1)) * ((-1)**n)
+    pi = a * k
+    n = n + 1 
+print(pi)
 print(math.pi)
 
-'''
+'''q
 d = float(input('введите d: '))
 a = 113355
 b = a % 1000
