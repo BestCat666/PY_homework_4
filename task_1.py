@@ -4,9 +4,28 @@
 
 import math
 
+d = float(input('введите d: '))
+n = 3
+s = math.pi
+k = (1 - 1/n + 1/(n + 2))
+pi2 = 4 * k
+while pi2 - s  > d:
+    pi2 = pi2 - 1/n + 1/(n + 2)
+    n = n + 2 
+    print(pi2)
+print(math.pi)
+
+'''
+d = float(input('введите d: '))
 a = 113355
 b = a % 1000
 c = a // 1000
 pi_ = (b / c)
-print(round(pi_,4))
-print(round(math.pi,4))
+s = math.pi
+if (pi_- s) < d:
+    print(pi_)
+
+#print(pi_)
+print(math.pi)
+'''
+
